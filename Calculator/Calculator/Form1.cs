@@ -35,10 +35,111 @@ namespace Calculator
 
         }
 
+        private void zero_Click(object sender, EventArgs e) 
+        { 
+            input += "0"; 
+        }
+
         private void one_Click(object sender, EventArgs e)
         {
             input += "1";
         }
 
+        private void two_Click(object sender, EventArgs e)
+        {
+            input += "2";
+        }
+       
+        private void three_Click(object sender, EventArgs e) 
+        { 
+            input += "3"; 
+        }
+        
+        private void four_Click(object sender, EventArgs e) 
+        {
+            input += "4"; 
+        }
+
+        private void five_Click(object sender, EventArgs e) 
+        { 
+            input += "5"; 
+        }
+
+        private void six_Click(object sender, EventArgs e) 
+        { 
+            input += "6"; 
+        }
+
+        private void seven_Click(object sender, EventArgs e) 
+        { 
+            input += "7"; 
+        }
+
+        private void eight_Click(object sender, EventArgs e) 
+        {
+            input += "8";
+        }
+
+        private void nine_Click(object sender, EventArgs e) 
+        {
+            input += "9";
+        }
+
+        private void del_Click(object sender, EventArgs e) 
+        { 
+            //TODO remove operand ( i.e. needs to keep list of inserted operands
+        }
+
+        private void plus_Click(object sender, EventArgs e)
+        { 
+            input += "+"; 
+        }
+
+        private void mult_Click(object sender, EventArgs e) 
+        {
+            input += "*"; 
+        }
+
+        private void minus_Click(object sender, EventArgs e) 
+        { 
+            input += "-"; 
+        }
+
+        private void clear_Click(object sender, EventArgs e) 
+        {
+           //TODO: initialize input variable
+        }
+
+        private void dot_Click(object sender, EventArgs e) 
+        {
+            input += ".";
+        }
+
+        private void sign_Click(object sender, EventArgs e)
+        {
+            //TODO: revert the number of last expression AND to put the sign "-" at heat ov "input" string in case of expression was positive 
+        }
+
+        private void div_Click(object sender, EventArgs e)
+        {
+            input += "/";
+        }
+
+        private void power_Click(object sender, EventArgs e)
+        {
+            input += "^";
+        }
+
+        private void percent_Click(object sender, EventArgs e)
+        {
+            //TODO: to think how to perform this as clear as possible...
+        }
+ 
+        private void equal_Click(object sender, EventArgs e)
+        {
+            input += "=";
+            //TODO: It will be trigger to calculation performation
+        }
+        
     }
 }
