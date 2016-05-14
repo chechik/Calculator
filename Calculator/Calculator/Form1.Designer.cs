@@ -324,7 +324,7 @@
             this.Controls.Add(this.two);
             this.Controls.Add(this.one);
             this.Name = "Std";
-            this.Text = "Standard Calculator";
+            this.Text = "Standarten Calculatoren";
             this.ResumeLayout(false);
             this.PerformLayout();
 

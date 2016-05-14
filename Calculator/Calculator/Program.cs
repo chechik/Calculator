@@ -16,7 +16,10 @@ namespace Calculator
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            Console.WriteLine("Onfsgdfgdfgdfge");
             Application.Run(new Std());
+            
+            
         }
     }
 }

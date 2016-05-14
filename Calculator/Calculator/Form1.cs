@@ -26,63 +26,75 @@ namespace Calculator
             this.operand1  = string.Empty;
             this.operand2  = string.Empty;
             this.result    =0.0;
+            
 
 
         }
 
         private void Display_TextChanged(object sender, EventArgs e)
         {
-
+            this.Display.Text = input; 
         }
 
         private void zero_Click(object sender, EventArgs e) 
-        { 
-            input += "0"; 
+        {
+           
+            input += "0";
+            this.Display_TextChanged(sender, e);
         }
 
         private void one_Click(object sender, EventArgs e)
         {
             input += "1";
+            this.Display_TextChanged(sender, e);
         }
 
         private void two_Click(object sender, EventArgs e)
         {
             input += "2";
+            this.Display_TextChanged(sender, e);
         }
        
         private void three_Click(object sender, EventArgs e) 
         { 
-            input += "3"; 
+            input += "3";
+            this.Display_TextChanged(sender, e);
         }
         
         private void four_Click(object sender, EventArgs e) 
         {
-            input += "4"; 
+            input += "4";
+            this.Display_TextChanged(sender, e);
         }
 
         private void five_Click(object sender, EventArgs e) 
         { 
-            input += "5"; 
+            input += "5";
+            this.Display_TextChanged(sender, e);
         }
 
         private void six_Click(object sender, EventArgs e) 
         { 
-            input += "6"; 
+            input += "6";
+            this.Display_TextChanged(sender, e);
         }
 
         private void seven_Click(object sender, EventArgs e) 
         { 
-            input += "7"; 
+            input += "7";
+            this.Display_TextChanged(sender, e);
         }
 
         private void eight_Click(object sender, EventArgs e) 
         {
             input += "8";
+            this.Display_TextChanged(sender, e);
         }
 
         private void nine_Click(object sender, EventArgs e) 
         {
             input += "9";
+            this.Display_TextChanged(sender, e);
         }
 
         private void del_Click(object sender, EventArgs e) 
