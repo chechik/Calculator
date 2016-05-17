@@ -33,7 +33,8 @@ namespace Calculator
 
         private void Display_TextChanged(object sender, EventArgs e)
         {
-            this.Display.Text = input; 
+            this.Display.Text = input+"\r\n"+"input_length:"+ input.Length ;
+            
         }
 
         private void zero_Click(object sender, EventArgs e) 
@@ -99,7 +100,15 @@ namespace Calculator
 
         private void del_Click(object sender, EventArgs e) 
         { 
-            //TODO remove operand ( i.e. needs to keep list of inserted operands
+            /*TODO 1. Highlight the row (with red) when attempting to delete symbol from empty row
+                   2. check correctness of stack position          
+            */
+
+            if (input.Length > 0)
+            {
+                input = input.Remove(input.Length - 1);
+                this.Display_TextChanged(sender, e);
+            }
         }
 
         private void plus_Click(object sender, EventArgs e)
